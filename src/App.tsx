@@ -52,7 +52,7 @@ const App = () => {
     setConnectionStatus('connecting');
 
     try {
-      const ws = new WebSocket("wss://real-time-chat-backend-rho.vercel.app");
+      const ws = new WebSocket("ws://real-time-chat-backend-rho.vercel.app");
 
       ws.onopen = () => {
         const joinMessage = JSON.stringify({
